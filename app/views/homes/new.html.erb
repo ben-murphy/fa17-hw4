@@ -1,0 +1,5 @@
+<%= form_for @todo, url: "homes#create", :method=> :POST, html: {class: "nifty_form"} do |f| %>
+  <%= f.text_field :tasks %>
+  <%= f.check_box :finished %>
+  <%= f.submit "Create Todo" %>
+<% end %>
